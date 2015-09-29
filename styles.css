@@ -7,9 +7,8 @@
 }
 
 body {
-    background-color: #c9c9c9 !important;
+/*    background-color: #c9c9c9 !important;*/
     font-family: 'Montserrat', sans-serif !important;
-    /*color: #575a5e;*/
 }
 
 /*div {
@@ -28,10 +27,7 @@ body {
 }
 
 .logoimg {
-    padding-top: 1.5vh;
-    padding-bottom: 2.5vh;
-    /*background: rgba(255, 255, 255, .6);*/
-    
+    padding-bottom: 2.5vh;    
 }
 
 #publika {
@@ -48,10 +44,10 @@ body {
  }
 @-webkit-keyframes first 
 {
-  0% {-webkit-transform: translate(0vw,40vh) scale(0) rotate(580deg); opacity: 0%;}
-  50% {-webkit-transform: translate(0vw,40vh) scale(2.5) rotate(0deg); opacity: 100%;}
-  65%, 75%, 85%, 90% {-webkit-transform: translate(10vw,40vh) scale(2.5); opacity: 100%;}
-  100% {-webkit-transform: translate(0vw,1vh) scale(1); opacity: 100%;}
+  0% {-webkit-transform: translate(-17vw,40vh) scale(0) rotate(580deg); opacity: 0%;}
+  50% {-webkit-transform: translate(-17vw,40vh) scale(1) rotate(0deg); opacity: 100%;}
+  65%, 75%, 85%, 90% {-webkit-transform: translate(1vw,40vh) scale(1); opacity: 100%;}
+  100% {-webkit-transform: translate(-9vw,.5vh) scale(.5); opacity: 100%;}
 }
 
 #publika
@@ -66,8 +62,8 @@ body {
 {
   0% {-webkit-transform: translate(0vw,40vh) scale(0); opacity: 0%;}
   50% {-webkit-transform: translate(0vw,40vh) scale(0); opacity: 0%;}
-  75%, 85% {-webkit-transform: translate(0vw,40vh) scale(2.5); opacity: 100%;}
-  100% {-webkit-transform: translate(0vw,1vh) scale(1); opacity: 100%;}
+  75%, 85% {-webkit-transform: translate(0vw,40vh) scale(1); opacity: 100%;}
+  100% {-webkit-transform: translate(0vw,.5vh) scale(.5); opacity: 100%;}
 }
 
 #menu {
@@ -86,9 +82,11 @@ body {
 
 #menu {
   padding: 50vh 1vh 0vh 1vh;
+  list-style-type: none;
+  font-size: 1.5em;
 }
 
-ul {
+/*ul {
     list-style-type: none;
     font-size: 2em;
 }
@@ -96,7 +94,7 @@ ul {
 li {
     display: table-cell;
     width:300px;
-  }
+  }*/
 
 a {
   color: #E83C2F !important;

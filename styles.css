@@ -4,35 +4,159 @@
   left: 0; 
   min-width: 100%;
   min-height: 100%;
+  margin: 0;
+  padding: 0;
+/*  opacity: 0.4;*/
 }
 
-body {
-/*    background-color: #c9c9c9 !important;*/
-    font-family: 'Montserrat', sans-serif !important;
-}
-
-/*div {
-  border: 1px solid green;
-}*/
-
-#logo
-{ width: 100%;
+.fondo
+{
+  background-color:#000000;
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0; bottom: 0;
   left:0; right: 0;
   overflow: hidden;
+  opacity: 0.6;
+  -webkit-animation-delay: 7s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: cortina;
+ }
+
+@-webkit-keyframes cortina
+{
+  0% {-webkit-transform: translate(0vh, 0vh);}
+  50% {-webkit-transform: translate(0vw, 0vh);}
+  100% {-webkit-transform: translate(0vw, -81vh);}
+}
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+div, img {
+  border: 1px solid green;
+}
+
+#top {
+  padding-top: 1vh;
+}
+
+#idioma {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: sub;
+  padding: 0;
+  margin: 0;
+}
+
+#idioma a {
+  vertical-align: sub;
+}
+
+/* small */
+@media only screen and (max-width: 40em) and (orientation: portrait) {
+  #idioma {
+    height: 6vh;
+    font-size: .7em;
+  }
+  #logo {
+  top: 6vh; bottom: 0;
+  left:0; right: 0;
+  }
+}
+
+@media only screen and (max-width: 40em) and (orientation: landscape) {
+  #idioma {
+    height: 11vh;
+    font-size: .6em;
+  }
+  #logo {
+  top: 11vh; bottom: 0;
+  left:0; right: 0;
+  }
+}
+
+/* medium */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  #idioma {
+    height: 7vh;
+    font-size: .8em;
+  }
+  #logo {
+  top: 6vh; bottom: 0;
+  left:0; right: 0;
+  }
+
+ }
+
+/* large */
+ @media only screen and (min-width: 64.063em) {
+  #idioma {
+    height: 4vh;
+    font-size: .7em;
+  }
+  #logo {
+  top: 4vh; bottom: 0;
+  left:0; right: 0;
+  }
+ }
+
+#logo
+{ width: 100%;
+  height: 80%;
+  position: absolute;
+  overflow: hidden;
 }
 
 .logoimg {
-    padding-bottom: 2.5vh;    
+  padding: 0;
+  margin: 0;
 }
 
-#publika {
-  padding-right: .3vw;
+/* ------- Logo small screen -------*/
+
+/* ------- Logo small screen portrait -------*/
+
+@media screen and (max-width: 40em) and (orientation: portrait) {
+  #completo
+  { 
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: completo;
+ }
+
+  @-webkit-keyframes completo
+{
+  0% {-webkit-transform: translate(0vw,31vh) scale(0); opacity: 0%;}
+  50% {-webkit-transform: translate(0vw,31vh) scale(1); opacity: 100%;}
+  100% {-webkit-transform: translate(0vw,1vh) scale(.7); opacity: 100%;}
 }
+}
+
+/* ------- Logo small screen landscape -------*/
+
+@media screen and (max-width: 40em) and (orientation: landscape) {
+  #completo
+  { 
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: completo;
+ }
+
+  @-webkit-keyframes completo
+{
+  0% {-webkit-transform: translate(0vw,10vh) scale(0); opacity: 0%;}
+  50% {-webkit-transform: translate(0vw,31vh) scale(1); opacity: 100%;}
+  100% {-webkit-transform: translate(0vw,-6vh) scale(.35); opacity: 100%;}
+}
+}
+
+/* ------- Logo large & medium screens ------- */
 
 #brujula
 { 
@@ -42,13 +166,55 @@ body {
   -webkit-animation-name: first;
 
  }
-@-webkit-keyframes first 
+
+/* ------- Brujula medium screen landscape ------- */
+
+@media only screen and (min-width: 40.063em) and (max-width: 50em) and (orientation: landscape) { 
+  @-webkit-keyframes first 
 {
-  0% {-webkit-transform: translate(-17vw,40vh) scale(0) rotate(580deg); opacity: 0%;}
-  50% {-webkit-transform: translate(-17vw,40vh) scale(1) rotate(0deg); opacity: 100%;}
-  65%, 75%, 85%, 90% {-webkit-transform: translate(1vw,40vh) scale(1); opacity: 100%;}
-  100% {-webkit-transform: translate(-9vw,.5vh) scale(.5); opacity: 100%;}
+  0% {-webkit-transform: translate(-17vw,41vh) scale(0) rotate(580deg); opacity: 0%;}
+  50% {-webkit-transform: translate(-17vw,41vh) scale(1) rotate(0deg); opacity: 100%;}
+  65%, 75%, 85%, 90% {-webkit-transform: translate(1vw,41vh) scale(1); opacity: 100%;}
+  100% {-webkit-transform: translate(-16vw,1vh) scale(.5); opacity: 100%;}
 }
+  }
+
+/* ------- Brujula medium screen landscape iPhone6 ------- */
+
+@media only screen and (min-width: 50.063em) and (max-width: 64em) and (orientation: landscape) { 
+  @-webkit-keyframes first 
+{
+  0% {-webkit-transform: translate(-17vw,41vh) scale(0) rotate(580deg); opacity: 0%;}
+  50% {-webkit-transform: translate(-17vw,41vh) scale(1) rotate(0deg); opacity: 100%;}
+  65%, 75%, 85%, 90% {-webkit-transform: translate(1vw,41vh) scale(1); opacity: 100%;}
+  100% {-webkit-transform: translate(-12.5vw,1vh) scale(.5); opacity: 100%;}
+}
+  }
+
+/* ------- Brujula medium screen portrait ------- */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) and (orientation: portrait) { 
+  @-webkit-keyframes first 
+{
+  0% {-webkit-transform: translate(-15.5vw,41vh) scale(0) rotate(580deg); opacity: 0%;}
+  50% {-webkit-transform: translate(-15.5vw,41vh) scale(1) rotate(0deg); opacity: 100%;}
+  65%, 75%, 85%, 90% {-webkit-transform: translate(1vw,41vh) scale(1); opacity: 100%;}
+  100% {-webkit-transform: translate(-16.5vw,1vh) scale(.5); opacity: 100%;}
+}
+  }
+
+/* ------- Brujula large screen mobile ------- */
+
+@media only screen and (min-width: 64.063em) { 
+  @-webkit-keyframes first 
+{
+  0% {-webkit-transform: translate(-17vw,41vh) scale(0) rotate(580deg); opacity: 0%;}
+  50% {-webkit-transform: translate(-17vw,41vh) scale(1) rotate(0deg); opacity: 100%;}
+  65%, 75%, 85%, 90% {-webkit-transform: translate(1vw,41vh) scale(1); opacity: 100%;}
+  100% {-webkit-transform: translate(-9vw,1vh) scale(.5); opacity: 100%;}
+}
+  }
+
 
 #publika
 { 
@@ -58,15 +224,92 @@ body {
   -webkit-animation-fill-mode: both;
   -webkit-animation-name: second;
  }
-@-webkit-keyframes second
+
+/* ------- Publika medium screen ------- */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  @-webkit-keyframes second
 {
-  0% {-webkit-transform: translate(0vw,40vh) scale(0); opacity: 0%;}
-  50% {-webkit-transform: translate(0vw,40vh) scale(0); opacity: 0%;}
-  75%, 85% {-webkit-transform: translate(0vw,40vh) scale(1); opacity: 100%;}
-  100% {-webkit-transform: translate(0vw,.5vh) scale(.5); opacity: 100%;}
+  0% {-webkit-transform: translate(0vw,41vh) scale(0); opacity: 0%;}
+  50% {-webkit-transform: translate(0vw,41vh) scale(0); opacity: 0%;}
+  75%, 85% {-webkit-transform: translate(0vw,41vh) scale(1); opacity: 100%;}
+  100% {-webkit-transform: translate(0vw,1vh) scale(.5); opacity: 100%;}
+}
+  }
+
+/* ------- Publika large screen ------- */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  @-webkit-keyframes second
+{
+  0% {-webkit-transform: translate(0vw,41vh) scale(0); opacity: 0%;}
+  50% {-webkit-transform: translate(0vw,41vh) scale(0); opacity: 0%;}
+  75%, 85% {-webkit-transform: translate(0vw,41vh) scale(1); opacity: 100%;}
+  100% {-webkit-transform: translate(0vw,1vh) scale(.5); opacity: 100%;}
+}
+  }
+
+/* ------- Publika x-large screen ------- */
+
+@media only screen and (min-width: 90.063em) {
+  @-webkit-keyframes second
+{
+  0% {-webkit-transform: translate(0vw,41vh) scale(0); opacity: 0%;}
+  50% {-webkit-transform: translate(0vw,41vh) scale(0); opacity: 0%;}
+  75%, 85% {-webkit-transform: translate(0vw,41vh) scale(1); opacity: 100%;}
+  100% {-webkit-transform: translate(0vw,1vh) scale(.5); opacity: 100%;}
+}
+  }
+
+/* ------- Menu small screen ------- */
+
+/* ------- Menu small screen portrait ------- */
+@media only screen and (max-width: 40em) and (orientation: portrait) { 
+#menu {
+  padding: 21vh 0vh 0vh 0vh;
+  list-style-type: none;
+  font-size: 1.5em;
+  -webkit-animation-delay: 4s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: menu;
+}
+@-webkit-keyframes menu
+{
+  0% {-webkit-transform: translate(0vw,1vh) scale(0); opacity: 0%;}
+  50% {-webkit-transform: translate(0vw,1vh) scale(1); opacity: 50%;}
+  100% {-webkit-transform: translate(0vw,1vh) scale(1); opacity: 100%;}
+}
 }
 
+/* ------- Menu small screen landscape ------- */
+
+@media only screen and (max-width: 40em) and (orientation: landscape) { 
 #menu {
+  padding: 35vh 0vh 0vh 0vh;
+  list-style-type: none;
+  font-size: 1em;
+  -webkit-animation-delay: 4s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: menu;
+}
+@-webkit-keyframes menu
+{
+  0% {-webkit-transform: translate(0vw,1vh) scale(0); opacity: 0%;}
+  50% {-webkit-transform: translate(0vw,1vh) scale(1); opacity: 50%;}
+  100% {-webkit-transform: translate(0vw,1vh) scale(1); opacity: 100%;}
+}
+}
+
+/* ------- Menu medium screen  ------- */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+#menu {
+  padding: 51vh 0vh 0vh 0vh;
+  list-style-type: none;
+  font-size: 1.5em;
   -webkit-animation-delay: 6.5s;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: 1;
@@ -75,26 +318,35 @@ body {
 }
 @-webkit-keyframes menu
 {
-  0% {-webkit-transform: translate(0vw,0vh) scale(0); opacity: 0%;}
-  50% {-webkit-transform: translate(0vw,0vh) scale(1); opacity: 50%;}
-  100% {-webkit-transform: translate(0vw,0vh) scale(1); opacity: 100%;}
+  0% {-webkit-transform: translate(0vw,-3vh) scale(0); opacity: 0%;}
+  50% {-webkit-transform: translate(0vw,-3vh) scale(1); opacity: 50%;}
+  100% {-webkit-transform: translate(0vw,-3vh) scale(1); opacity: 100%;}
+}
 }
 
+/* ------- Menu large screen  ------- */
+@media only screen and (min-width: 64.063em) { 
 #menu {
-  padding: 50vh 1vh 0vh 1vh;
+  padding: 51vh 0vh 0vh 0vh;
   list-style-type: none;
   font-size: 1.5em;
+  -webkit-animation-delay: 6.5s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: menu;
+}
+@-webkit-keyframes menu
+{
+  0% {-webkit-transform: translate(0vw,1vh) scale(0); opacity: 0%;}
+  50% {-webkit-transform: translate(0vw,1vh) scale(1); opacity: 50%;}
+  100% {-webkit-transform: translate(0vw,1vh) scale(1); opacity: 100%;}
+}
 }
 
-/*ul {
-    list-style-type: none;
-    font-size: 2em;
+.seccion {
+  margin-bottom: 11vh;
 }
-
-li {
-    display: table-cell;
-    width:300px;
-  }*/
 
 a {
   color: #E83C2F !important;
@@ -113,4 +365,8 @@ a:active {
     color: #E83C2F;
 }
 
-
+#id p {
+  padding-top: 30vh;
+  font-size: 2em;
+  color: #000000;
+}

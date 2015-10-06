@@ -9,12 +9,21 @@
     <link href="css/hover.css" rel="stylesheet" media="all">
     <script src="js/vendor/modernizr.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/flyPanels.css">
+
+    <link rel="stylesheet" href="style.css" />
  </head>
 
-<body>
+<body class="pushmenu-push">
 
-
+  <nav class="pushmenu pushmenu-left">
+    <a href="#main">Inicio</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#clientes">Clientes</a>
+    <a href="#comunidad">Comunidad</a>
+  </nav>
+  
 
 <!-- ******************************* HEADER ************************* -->
 
@@ -23,19 +32,22 @@
   <div class="fondo" align="center">
   </div>
 
-  <div id="top" class="small-12 columns">
+  <div id="super">
       <div id="idioma" class="small-2 large-1 columns">
-        <a href="#"><img src="menu.png" alt="" align="left"></a>
+                <section class="buttonset">
+            <div id="nav_list"></div>
+        </section>
       </div>
 
-      <div id="idioma" class="small-2 large-1 columns">
+      <div id="idioma" class="small-2 large-1 columns" align="right">
         <a href="#">ES</a> <a href="#">EN</a>
       </div>
 
-      <div id="idioma" class="small-2 small-offset-5 large-2 large-offset-8 columns" align="right">
+      <div id="idioma" class="small-2 small-offset-5 large-2 large-offset-8 columns" align="center">
         <a href="#"><i class="fa fa-twitter-square"></i></a>
         <a href="#"><i class="fa fa-facebook-official"></i></a>
       </div>
+  
 
       <div id="logo" class="small-12">
 
@@ -61,7 +73,7 @@
 
 <div id="main">
 
-<nav>
+<nav id="main-menu">
   <div class="small-12 columns menu" id="menu">
 
           <div class="small-12 medium-3 large-3 columns text-center seccion">
@@ -81,7 +93,7 @@
           </div>
 
      </div>
-  </nav>
+</nav>
 
 </div>
  
@@ -166,6 +178,10 @@
 
 </section>
 
+  </div><!-- End Main -->
+</div><!-- End Container -->
+
+
 <!-- ******************* RESPONSIVE TEST **************** -->
 
 <!--   <section>
@@ -179,12 +195,26 @@
   </p>
   </div>
   </section> -->
-       
+
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
     </script>
+    <script src="jquery.flypanels.js"></script>
+
+    <script>
+      $(document).ready(function() {
+    $menuLeft = $('.pushmenu-left');
+    $nav_list = $('#nav_list');
+    
+    $nav_list.click(function() {
+      $(this).toggleClass('active');
+      $('.pushmenu-push').toggleClass('pushmenu-push-toright');
+      $menuLeft.toggleClass('pushmenu-open');
+    });
+  });</script>
+
   </body>
 </html>

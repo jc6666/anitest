@@ -1,0 +1,235 @@
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    background: url(../background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* div {
+  border: 1px solid blue !important;
+} */
+
+a {
+  color: #E83C2F !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+    color: #E83C2F;
+}
+
+a:visited {
+    color: #E83C2F;
+}
+
+a:active {
+    color: #E83C2F;
+}
+
+/* ------------------------------------ TOP ------------------------------------------ */
+
+#super {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#idioma {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+@media only screen and (max-width: 40em) {
+  #idioma {
+  font-size: .9em;
+}
+}
+
+#redes {
+  font-size: 1.1em;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+@media only screen and (max-width: 40em) {
+  #redes {
+  font-size: 1em;
+}
+}
+
+#logo { 
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.logoimg {
+  padding: 0;
+  margin: 0;
+}
+
+/* ---------------------------------- LOGO -------------------------------------------- */
+
+                /* ----------------- small portrait ----------------- */
+
+@media only screen and (max-width: 40em) and (orientation: portrait) {
+#completo { 
+  -webkit-animation-duration: 2.8s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: completo;
+ }
+
+  @-webkit-keyframes completo {
+  0% {-webkit-transform: translate(0vw,31vh) scale(0); opacity: 0%;}
+  50% {-webkit-transform: translate(0vw,31vh) scale(1); opacity: 100%;}
+  100% {-webkit-transform: translate(0vw,-4vh) scale(.5); opacity: 100%;}
+}
+}
+
+                /* ----------------- small landscape ----------------- */
+
+@media only screen and (max-width: 40em) and (orientation: landscape) {
+  #completo { 
+  -webkit-animation-duration: 2.8s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: completo;
+ }
+
+  @-webkit-keyframes completo {
+  0% {-webkit-transform: translate(0vw,25vh) scale(0); opacity: 0%;}
+  50% {-webkit-transform: translate(0vw,25vh) scale(.55); opacity: 100%;}
+  100% {-webkit-transform: translate(0vw,-10vh) scale(.35); opacity: 100%;}
+}
+}
+
+                /* ----------------- large ----------------- */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  #completo { 
+  -webkit-animation-duration: 2.8s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: completo;
+ }
+
+  @-webkit-keyframes completo {
+  0% {-webkit-transform: translate(0vw,35vh) scale(0); opacity: 0%;}
+  50% {-webkit-transform: translate(0vw,35vh) scale(1); opacity: 100%;}
+  100% {-webkit-transform: translate(0vw, -4vh) scale(.5); opacity: 100%;}
+}
+}
+
+/* ------------------------------------- MAIN ------------------------------------------*/
+
+
+
+/* ------------------------------------- MENU ------------------------------------------*/
+
+#menu {
+  background-color: rgba(0, 0, 0, .8);
+}
+
+#menu-item {
+  display: -webkit-box;
+  -webkit-box-pack:center;
+  -webkit-box-align:center;
+  height: 50px;
+}
+
+                /* ----------------- small portrait ----------------- */
+
+@media only screen and (max-width: 40em) and (orientation: portrait) { 
+#menu {
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.5em;
+  -webkit-animation-delay: 2.8s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: menu;
+}
+@-webkit-keyframes menu
+{
+  0% {-webkit-transform: translate(0vw, 0vh) scale(0); opacity: 0%;}
+  50% {-webkit-transform: translate(0vw, 15vh) scale(1); opacity: 50%;}
+  100% {-webkit-transform: translate(0vw, 15vh) scale(1); opacity: 100%;}
+}
+}
+
+                /* ----------------- small landscape ----------------- */
+
+@media only screen and (max-width: 40em) and (orientation: landscape) { 
+#menu {
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.5em;
+  -webkit-animation-delay: 2.8s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: menu;
+}
+@-webkit-keyframes menu
+{
+  0% {-webkit-transform: translate(0vw, 0vh) scale(0); opacity: 0%;}
+  50% {-webkit-transform: translate(0vw, -10vh) scale(1); opacity: 50%;}
+  100% {-webkit-transform: translate(0vw, -10vh) scale(1); opacity: 100%;}
+}
+}
+
+
+                /* ----------------- large ----------------- */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
+#menu {
+  padding: 0;
+  list-style-type: none;
+  -webkit-animation-delay: 2.8s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: menu;
+}
+@-webkit-keyframes menu
+{
+  0% {-webkit-transform: translate(0vw, 28vh) scale(0); opacity: 0%;}
+  50% {-webkit-transform: translate(0vw, 28vh) scale(1); opacity: 50%;}
+  100% {-webkit-transform: translate(0vw, 28vh) scale(1); opacity: 100%;}
+}
+} 
+
+
+/* ------------------------------ CONTENIDO ----------------------------- */
+
+/*#nosotros {
+  height: 100%;
+  padding: 25vh;
+  background-color: #00ccff;
+}
+
+#servicios {
+  height: 100%;
+  padding: 20vh;
+  background-color: #046315;
+}
+
+#servicios a {
+  float: right;
+}
+
+#clientes {
+  height: 100%;
+  padding: 25vh;
+  background-color: #00565c;
+}
+
+#comunidad {
+  height: 100%;
+  padding: 25vh;
+  background-color: #00cc66;
+}*/

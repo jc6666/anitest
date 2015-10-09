@@ -1,8 +1,9 @@
 body {
     font-family: 'Montserrat', sans-serif !important;
-    background: url(../background.jpg);
+    background: url(../background4.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* div {
@@ -41,7 +42,9 @@ a:active {
   text-align: right;
 }
 
-@media only screen and (max-width: 40em) {
+                /* ----------------- small portrait ----------------- */
+
+@media only screen and (max-width: 40em) and (orientation: portrait) {
   #idioma {
   font-size: .9em;
 }
@@ -55,7 +58,9 @@ a:active {
   text-align: left;
 }
 
-@media only screen and (max-width: 40em) {
+                /* ----------------- small landscape ----------------- */
+
+@media only screen and (max-width: 40em) and (orientation: landscape) {
   #redes {
   font-size: 1em;
 }
@@ -102,13 +107,13 @@ a:active {
   @-webkit-keyframes completo {
   0% {-webkit-transform: translate(0vw,25vh) scale(0); opacity: 0%;}
   50% {-webkit-transform: translate(0vw,25vh) scale(.55); opacity: 100%;}
-  100% {-webkit-transform: translate(0vw,-10vh) scale(.35); opacity: 100%;}
+  100% {-webkit-transform: translate(0vw,-12vh) scale(.35); opacity: 100%;}
 }
 }
 
                 /* ----------------- large ----------------- */
 
-@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+@media only screen and (min-width: 64.063em) {
   #completo { 
   -webkit-animation-duration: 2.8s;
   -webkit-animation-iteration-count: 1;
@@ -125,6 +130,68 @@ a:active {
 
 /* ------------------------------------- MAIN ------------------------------------------*/
 
+                /* ----------------- small portrait ----------------- */
+
+@media only screen and (max-width: 40em) and (orientation: portrait) {
+#main { 
+  position:absolute;
+  left:0px;
+  bottom:0px;
+  width:100%;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+#main h1 {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #ffffff;
+}
+}
+
+@media only screen and (max-width: 40em) and (orientation: landscape) {
+#main { 
+  position:absolute;
+  left:0px;
+  bottom:-10px;
+  width:100%;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+#main p {
+  font-size: .8em;
+}
+
+#main h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #ffffff;
+}
+}
+
+                /* ----------------- large ----------------- */
+
+@media only screen and (min-width:64.063em) {
+#main { 
+  position:absolute;
+  left:0px;
+  bottom:100px;
+  width:100%;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+#main h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#main p {
+  font-size: 1.5em;
+}
+}
 
 
 /* ------------------------------------- MENU ------------------------------------------*/
@@ -156,8 +223,8 @@ a:active {
 @-webkit-keyframes menu
 {
   0% {-webkit-transform: translate(0vw, 0vh) scale(0); opacity: 0%;}
-  50% {-webkit-transform: translate(0vw, 15vh) scale(1); opacity: 50%;}
-  100% {-webkit-transform: translate(0vw, 15vh) scale(1); opacity: 100%;}
+  50% {-webkit-transform: translate(0vw, 10vh) scale(1); opacity: 50%;}
+  100% {-webkit-transform: translate(0vw, 10vh) scale(1); opacity: 100%;}
 }
 }
 
@@ -177,18 +244,19 @@ a:active {
 @-webkit-keyframes menu
 {
   0% {-webkit-transform: translate(0vw, 0vh) scale(0); opacity: 0%;}
-  50% {-webkit-transform: translate(0vw, -10vh) scale(1); opacity: 50%;}
-  100% {-webkit-transform: translate(0vw, -10vh) scale(1); opacity: 100%;}
+  50% {-webkit-transform: translate(0vw, -18vh) scale(1); opacity: 50%;}
+  100% {-webkit-transform: translate(0vw, -18vh) scale(1); opacity: 100%;}
 }
 }
 
 
                 /* ----------------- large ----------------- */
 
-@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
+@media only screen and (min-width: 64.063em) { 
 #menu {
   padding: 0;
   list-style-type: none;
+  font-size: 1.8em;
   -webkit-animation-delay: 2.8s;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: 1;
@@ -197,9 +265,9 @@ a:active {
 }
 @-webkit-keyframes menu
 {
-  0% {-webkit-transform: translate(0vw, 28vh) scale(0); opacity: 0%;}
-  50% {-webkit-transform: translate(0vw, 28vh) scale(1); opacity: 50%;}
-  100% {-webkit-transform: translate(0vw, 28vh) scale(1); opacity: 100%;}
+  0% {-webkit-transform: translate(0vw, 19vh) scale(0); opacity: 0%;}
+  50% {-webkit-transform: translate(0vw, 19vh) scale(1); opacity: 50%;}
+  100% {-webkit-transform: translate(0vw, 19vh) scale(1); opacity: 100%;}
 }
 } 
 

@@ -9,10 +9,12 @@
     <link href="css/hover.css" rel="stylesheet" media="all">
     <script src="js/vendor/modernizr.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/flyPanels.css">
 
     <link rel="stylesheet" href="css/style.css" />
  </head>
+
+
+ <body class="bg1 bg2 bg3 bg4">
 
 <!-- ******************************* HEADER ************************* -->
 
@@ -31,7 +33,7 @@
 
       <div id="logo">
         <div class="small-12 columns text-center">
-            <a href="#main">
+            <a href="index2.html">
               <img src="completo.svg" id="completo"/>
             </a>
         </div>
@@ -39,25 +41,27 @@
 
   </div>
 
-<!-- ******************************* MENU ************************* -->
+<div id="principal">
+
+<!-- ******************************* MENU HORIZONTAL ************************* -->
 
 <nav>
-  <div class="small-12 columns text-cente" id="menu">
+  <div class="small-12 columns text-center fadeout" id="menu">
 
-          <div id="menu-item" class="small-12 medium-3 large-3 columns text-center">
+          <div class="small-12 medium-3 large-3 columns text-center menu-item nosotros">
             <a href="#nosotros" class="hvr-underline-from-center">Nosotros</a>
           </div>
 
-          <div id="menu-item" class="small-12 medium-3 large-3 columns text-center">
+          <div class="small-12 medium-3 large-3 columns text-center menu-item servicios">
             <a href="#servicios" class="hvr-underline-from-center">Servicios</a>
           </div>
 
-          <div id="menu-item" class="small-12 medium-3 large-3 columns text-center">
-            <a href="#clientes" class="hvr-underline-from-center">Clientes</a>
+          <div class="small-12 medium-3 large-3 columns text-center menu-item comunidad">
+            <a href="#comunidad" class="hvr-underline-from-center">Comunidad</a>
           </div>
 
-          <div id="menu-item" class="small-12 medium-3 large-3 columns text-center">
-            <a href="#comunidad" class="hvr-underline-from-center">Comunidad</a>
+          <div class="small-12 medium-3 large-3 columns text-center menu-item contacto">
+            <a href="#contacto" class="hvr-underline-from-center">Contáctanos</a>
           </div>
 
      </div>
@@ -73,13 +77,23 @@
   <h1>Contexto, Ruta y Personalidad</h1><p>para participar en la discusión pública</p>
 </div>
 
+</div> <!-- fin PRINCIPAL -->
 
+<!-- ******************************* MENU VERTICAL ************************* -->
 
+  <div id="side">
+      <ul class="side-nav">
+        <div class="side-item nosv"><li><a href="#nosotros">Nosotros</a></li></div>
+        <div class="side-item serv"><li><a href="#servicios">Servicios</a></li></div>
+        <div class="side-item comv"><li><a href="#comunidad">Comunidad</a></li></div>
+        <div class="side-item conv"><li><a href="#contacto">Contáctanos</a></li></div>
+      </ul>
+  </div>    
 
+<!-- ******************************* NOSOTROS ************************* -->
+<section>
 
-<!-- ******************************* NOSOTROS ************************* 
-
-<section class="small-12 columns" id="nosotros">
+<div class="small-12 columns text-center" id="nosotros">
 
     <div class="small-6 columns"><img src="http://placehold.it/500x500/?text=Nosotros" alt=""></div>
 
@@ -94,72 +108,82 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam expedita maiores ea modi doloribus optio, fuga saepe voluptatum incidunt enim iste quibusdam perferendis assumenda sapiente. Ipsa temporibus aliquam dignissimos, eveniet reiciendis ipsum eos, ipsam ducimus dolorum error doloremque quis dolore fuga nostrum natus. Minus repudiandae maiores dolorem labore, fuga culpa!</p>      
       </div>
     </div>
+</div>
 
-</section>-->
+</section>
 
-<!-- ******************************* SERVICIOS ************************* 
+<!-- ******************************* SERVICIOS ************************* -->
 
-<section class="small-12 columns" id="servicios">
+<section>
+
+<div class="small-12 columns" id="servicios">
 
     <div class="small-6 columns">
       <div>
-        <h1>¿Quiénes somos?</h1>
+        <h1>Contexto</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, corporis, suscipit. Voluptate velit est facilis, amet accusamus alias, laudantium placeat totam officiis dolorem eligendi, harum.</p>
       </div>
 
       <div>
-        <h1>¿Qué creemos?</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam expedita maiores ea modi doloribus optio, fuga saepe voluptatum incidunt enim iste quibusdam perferendis assumenda sapiente. Ipsa temporibus aliquam dignissimos, eveniet reiciendis ipsum eos, ipsam ducimus dolorum error doloremque quis dolore fuga nostrum natus. Minus repudiandae maiores dolorem labore, fuga culpa!</p>      
+        <h1>Personalidad</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam expedita maiores ea modi doloribus optio, fuga saepe voluptatum incidunt enim iste quibusdam perferendis assumenda sapiente.</p>      
+      </div>
+
+      <div>
+        <h1>Ruta</h1>
+        <p> Ipsa temporibus aliquam dignissimos, eveniet reiciendis ipsum eos, ipsam ducimus dolorum error doloremque quis dolore fuga nostrum natus. Minus repudiandae maiores dolorem labore, fuga culpa!</p>
       </div>
     </div>
 
     <div class="small-6 columns"><img src="http://placehold.it/500x500/?text=Servicios" alt=""></div>
 
-</section>-->
+</div>
 
-<!-- ******************************* CLIENTES ************************* 
+</section>
 
-<section class="small-12 columns" id="clientes">
+<!-- ******************************* COMUNIDAD ************************* -->
 
-    <div class="small-6 columns"><img src="http://placehold.it/500x500/?text=Clientes" alt=""></div>
-
-    <div class="small-6 columns">
-      <div>
-        <h1>¿Quiénes somos?</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, corporis, suscipit. Voluptate velit est facilis, amet accusamus alias, laudantium placeat totam officiis dolorem eligendi, harum.</p>
-      </div>
-
-      <div>
-        <h1>¿Qué creemos?</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam expedita maiores ea modi doloribus optio, fuga saepe voluptatum incidunt enim iste quibusdam perferendis assumenda sapiente. Ipsa temporibus aliquam dignissimos, eveniet reiciendis ipsum eos, ipsam ducimus dolorum error doloremque quis dolore fuga nostrum natus. Minus repudiandae maiores dolorem labore, fuga culpa!</p>      
-      </div>
+<section>
+<div class="small-12 columns" id="comunidad">
+    <div class="small-12 columns">
+      <h1>Una vez al año, adoptamos un proyecto que creemos que ayuda a tener un mejor país:</h1>
     </div>
 
-</section>-->
-
-<!-- ******************************* COMUNIDAD ************************* 
-
-<section class="small-12 columns" id="comunidad">
-
     <div class="small-6 columns">
-      <div>
-        <h1>¿Quiénes somos?</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, corporis, suscipit. Voluptate velit est facilis, amet accusamus alias, laudantium placeat totam officiis dolorem eligendi, harum.</p>
-      </div>
-
-      <div>
-        <h1>¿Qué creemos?</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam expedita maiores ea modi doloribus optio, fuga saepe voluptatum incidunt enim iste quibusdam perferendis assumenda sapiente. Ipsa temporibus aliquam dignissimos, eveniet reiciendis ipsum eos, ipsam ducimus dolorum error doloremque quis dolore fuga nostrum natus. Minus repudiandae maiores dolorem labore, fuga culpa!</p>      
-      </div>
+      <img src="http://placehold.it/500x400/?text=Redes-de-Tutoria" alt="">
     </div>
 
-    <div class="small-6 columns"><img src="http://placehold.it/500x500/?text=Comunidad" alt=""></div>
+    <div class="small-6 columns">
+      <img src="http://placehold.it/500x400/?text=Justicia-Cotidiana" alt="">
+    </div>
 
-</section>-->
+</div>
+</section>
 
-  </div><!-- End Main -->
-</div><!-- End Container -->
+<!-- ******************************* CONTACTO ************************* -->
+<section>
+<div class="small-12 columns" id="contacto">
 
+      <div class="small-12 columns">
+        <h1>Contáctanos</h1>
+        <form>
+          Nombre:<br>
+          <input type="text" name="Nombre">
+          <br>
+          Apellido:<br>
+          <input type="text" name="Apellido">
+          Correo Electrónico:<br>
+          <input type="text" name="Correo">
+          <br>
+          Teléfono:<br>
+          <input type="text" name="Telefono">
+          <br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+</div>
+</section>
 
 <!-- ******************* RESPONSIVE TEST **************** -->
 
@@ -181,19 +205,108 @@
     <script>
       $(document).foundation();
     </script>
-    <script src="jquery.flypanels.js"></script>
 
+<!-- NOSOTROS HORIZONTAL --> 
     <script>
-      $(document).ready(function() {
-    $menuLeft = $('.pushmenu-left');
-    $nav_list = $('#nav_list');
-    
-    $nav_list.click(function() {
-      $(this).toggleClass('active');
-      $('.pushmenu-push').toggleClass('pushmenu-push-toright');
-      $menuLeft.toggleClass('pushmenu-open');
-    });
-  });</script>
+      $(document).ready(function(){
+        $(".nosotros").click(function(){
+           $("#principal").hide("slow");
+            $('body').css('background-image', 'url("zocalo.jpg")');
+              $("#nosotros").show(); $("#side").show();
+        });
+      });
+    </script>
+
+<!-- SERVICIOS HORIZONTAL --> 
+    <script>
+      $(document).ready(function(){
+        $(".servicios").click(function(){
+           $("#principal").hide("slow");
+            $('body').css('background-image', 'url("caballito.jpg")');
+              $("#servicios").show(); $("#side").show();
+        });
+      });
+    </script>
+
+<!-- COMUNIDAD HORIZONTAL --> 
+  <script>
+      $(document).ready(function(){
+        $(".comunidad").click(function(){
+           $("#principal").hide("slow");
+            $('body').css('background-image', 'url("polanco.jpg")');
+              $("#comunidad").show(); $("#side").show();
+        });
+      });
+    </script>
+
+
+<!-- CONTACTO HORIZONTAL -->
+    <script>  
+       $(document).ready(function(){
+        $(".contacto").click(function(){
+           $("#principal").hide("slow");
+            $('body').css('background-image', 'url("angel.jpg")');
+              $("#contacto").show(); $("#side").show();
+        });
+      });
+    </script>
+
+<!-- NOSOTROS VERTICAL -->
+    <script>
+      $(document).ready(function(){
+        $(".nosv").click(function(){
+           $("#nosotros").hide("slow");
+           $("#servicios").hide("slow");
+           $("#comunidad").hide("slow");
+           $("#contacto").hide("slow");
+            $('body').css('background-image', 'url("zocalo.jpg")');
+              $("#nosotros").show(); $("#side").show();
+        });
+      });
+    </script>
+
+<!-- SERVICIOS VERTICAL -->
+    <script>
+      $(document).ready(function(){
+        $(".serv").click(function(){
+           $("#nosotros").hide("slow");
+           $("#servicios").hide("slow");
+           $("#comunidad").hide("slow");
+           $("#contacto").hide("slow");
+            $('body').css('background-image', 'url("caballito.jpg")');
+              $("#servicios").show(); $("#side").show();
+        });
+      });
+    </script>
+
+<!-- COMUNIDAD VERTICAL -->
+    <script>
+      $(document).ready(function(){
+        $(".comv").click(function(){
+           $("#nosotros").hide("slow");
+           $("#servicios").hide("slow");
+           $("#comunidad").hide("slow");
+           $("#contacto").hide("slow");
+            $('body').css('background-image', 'url("polanco.jpg")');
+              $("#comunidad").show(); $("#side").show();
+        });
+      });
+    </script>
+
+<!-- CONTÁCTANOS VERTICAL -->
+    <script>
+      $(document).ready(function(){
+        $(".conv").click(function(){
+           $("#nosotros").hide("slow");
+           $("#servicios").hide("slow");
+           $("#comunidad").hide("slow");
+           $("#contacto").hide("slow");
+            $('body').css('background-image', 'url("angel.jpg")');
+              $("#contacto").show(); $("#side").show();
+        });
+      });
+    </script>
+
 
   </body>
 </html>

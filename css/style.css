@@ -1,6 +1,30 @@
 body {
     font-family: 'Montserrat', sans-serif !important;
-    background: url(../background4.jpg);
+}
+
+.bg1 {
+    background-image: url(../background4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg2 {
+    background-image: url(../zocalo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg3 {
+    background-image: url(../background4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg4 {
+    background-image: url(../background4.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -140,6 +164,17 @@ a:active {
   width:100%;
   color: #ffffff;
   font-weight: 400;
+  -webkit-animation-delay: 2.8s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: contexto;
+}
+@-webkit-keyframes contexto
+{
+  0% {opacity: 0%;}
+  50% {opacity: 50%;}
+  100% { opacity: 100%;}
 }
 
 #main h1 {
@@ -149,6 +184,8 @@ a:active {
 }
 }
 
+                /* ----------------- small landscape ----------------- */
+
 @media only screen and (max-width: 40em) and (orientation: landscape) {
 #main { 
   position:absolute;
@@ -157,6 +194,17 @@ a:active {
   width:100%;
   color: #ffffff;
   font-weight: 400;
+  -webkit-animation-delay: 2.8s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: contexto;
+}
+@-webkit-keyframes contexto
+{
+  0% {opacity: 0%;}
+  50% {opacity: 50%;}
+  100% { opacity: 100%;}
 }
 
 #main p {
@@ -176,10 +224,20 @@ a:active {
 #main { 
   position:absolute;
   left:0px;
-  bottom:100px;
+  bottom:0px;
   width:100%;
-  color: #ffffff;
-  font-weight: 400;
+  -webkit-animation-delay: 3.8s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: main;
+}
+@-webkit-keyframes main
+{
+  0% {-webkit-transform: translate(0vw,-18vh) scale(0); opacity: 0%;}
+  50% {-webkit-transform: translate(0vw,-18vh) scale(1); opacity: 50%;}
+  100% {-webkit-transform: translate(0vw,-18vh) scale(1); opacity: 100%;}
+}
 }
 
 #main h1 {
@@ -190,17 +248,18 @@ a:active {
 
 #main p {
   font-size: 1.5em;
-}
+  color: #ffffff;
+  font-weight: 400;
 }
 
 
-/* ------------------------------------- MENU ------------------------------------------*/
+/* ------------------------------------- MENU HORIZONTAL ------------------------------------------*/
 
 #menu {
   background-color: rgba(0, 0, 0, .8);
 }
 
-#menu-item {
+.menu-item {
   display: -webkit-box;
   -webkit-box-pack:center;
   -webkit-box-align:center;
@@ -271,33 +330,93 @@ a:active {
 }
 } 
 
+/* ------------------------------ MENU VERTICAL ----------------------------- */
+
+#side {
+  display:none;
+}
+
+#side ul {
+  padding-top: 25vh;
+}
+
+#side li {
+  display: -webkit-box;
+  -webkit-box-pack:center;
+  -webkit-box-align:center;
+}
+
+.side-nav {
+  background-color: rgba(0, 0, 0, .8);
+  font-size: 1.8em;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+.side-item {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 1.5em;
+  height: 15vh;
+
+}
 
 /* ------------------------------ CONTENIDO ----------------------------- */
 
-/*#nosotros {
+
+                /* ----------------- nosotros ----------------- */
+
+#nosotros {
   height: 100%;
-  padding: 25vh;
-  background-color: #00ccff;
+  padding: 0 15vh 0 15vh;
+  margin: 0;
+  display: none;
+  color: #FFFFFF;
 }
+
+#nosotros h1 {
+  color: #E83C2F;
+}
+
+                /* ----------------- servicios ----------------- */
 
 #servicios {
   height: 100%;
-  padding: 20vh;
-  background-color: #046315;
+  padding: 0 25vh 0 25vh;
+  margin: 0;
+  display: none;
+  color: #FFFFFF;
 }
 
-#servicios a {
-  float: right;
+#servicios h1 {
+  color: #E83C2F;
 }
 
-#clientes {
-  height: 100%;
-  padding: 25vh;
-  background-color: #00565c;
-}
+                /* ----------------- comunidad ----------------- */
 
 #comunidad {
   height: 100%;
-  padding: 25vh;
-  background-color: #00cc66;
-}*/
+  padding: 0 0 0 25vh;
+  margin: 0;
+  display: none;
+  color: #FFFFFF;
+}
+
+#comunidad h1 {
+  color: #E83C2F;
+}
+
+                /* ----------------- contacto ----------------- */
+
+#contacto {
+  height: 100%;
+  padding: 0 15vh 0 25vh;
+  margin: 0;
+  display: none;
+  color: #FFFFFF;
+}
+
+#contacto h1 {
+  color: #E83C2F;
+}

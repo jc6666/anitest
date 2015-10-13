@@ -8,7 +8,7 @@ ul {
 
 /*div {
   border: 1px solid blue !important;
-} */
+}*/
 
 a {
   color: #E83C2F !important;
@@ -33,7 +33,6 @@ a:active {
   background-color: rgba(0, 0, 0, .7);
   position: fixed;
   z-index: 2;
-  display: none;
 }
 
 /* ------------------------------------ TOP ------------------------------------------ */
@@ -114,9 +113,9 @@ a:active {
  }
 
   @-webkit-keyframes completo {
-  0% {-webkit-transform: translate(0vw,25vh) scale(0); opacity: 0%;}
-  50% {-webkit-transform: translate(0vw,25vh) scale(.55); opacity: 100%;}
-  100% {-webkit-transform: translate(0vw,-12vh) scale(.35); opacity: 100%;}
+  0% {-webkit-transform: translate(0vw,20vh) scale(0); opacity: 0%;}
+  50% {-webkit-transform: translate(0vw,20vh) scale(.55); opacity: 100%;}
+  100% {-webkit-transform: translate(0vw,-17vh) scale(.35); opacity: 100%;}
 }
 }
 
@@ -192,29 +191,25 @@ a:active {
 #main { 
   position:absolute;
   left:0px;
-  bottom:-10px;
+  bottom:0px;
   width:100%;
   color: #ffffff;
   font-weight: 400;
-  -webkit-animation-delay: 2.8s;
+  -webkit-animation-delay: 3.2s;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-fill-mode: both;
-  -webkit-animation-name: contexto;
+  -webkit-animation-name: main;
 }
-@-webkit-keyframes contexto
+@-webkit-keyframes main
 {
-  0% {opacity: 0%;}
-  50% {opacity: 50%;}
-  100% { opacity: 100%;}
-}
-
-#main p {
-  font-size: .8em;
+  0% {-webkit-transform: translate(0vw,vh) scale(0); opacity: 0%;}
+  50% {-webkit-transform: translate(0vw,vh) scale(1); opacity: 50%;}
+  100% {-webkit-transform: translate(0vw,vh) scale(1); opacity: 100%;}
 }
 
 #main h1 {
-  font-size: 1.5em;
+  font-size: 1em !important;
   font-weight: 700;
   color: #ffffff;
 }
@@ -288,7 +283,7 @@ a:active {
   display: -webkit-box;
   -webkit-box-pack:center;
   -webkit-box-align:center;
-  height: 50px;
+  height: 40px;
 }
 
                 /* ----------------- small portrait ----------------- */
@@ -319,6 +314,8 @@ a:active {
   padding: 0;
   list-style-type: none;
   font-size: 1.5em;
+  position: absolute;
+  z-index: 11;
   -webkit-animation-delay: 2.8s;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: 1;
@@ -327,9 +324,9 @@ a:active {
 }
 @-webkit-keyframes menu
 {
-  0% {-webkit-transform: translate(0vw, 0vh) scale(0); opacity: 0%;}
-  50% {-webkit-transform: translate(0vw, -18vh) scale(1); opacity: 50%;}
-  100% {-webkit-transform: translate(0vw, -18vh) scale(1); opacity: 100%;}
+  0% {-webkit-transform: translate(0vw, 4vh) scale(0); opacity: 0%;}
+  50% {-webkit-transform: translate(0vw, 4vh) scale(1); opacity: 50%;}
+  100% {-webkit-transform: translate(0vw, 4vh) scale(1); opacity: 100%;}
 }
 }
 
@@ -409,6 +406,12 @@ a:active {
   height: 15vh;
 }
 
+#negro {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .7);
+}
+
 /* ------------------------------ CONTENIDO ----------------------------- */
 
 #principal {
@@ -424,159 +427,158 @@ a:active {
 
                 /* ----------------- nosotros ----------------- */
 
-#nosbg {
+#nosotros {
   height: 100%;
-  width: 100%;
-  background-image: url(../img/zocalo.jpg);
+  background-image: url(../img/zocalo1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: none;
-  position: fixed;
-  z-index: 1;
-}
-
-#nosotros {
-  height: 100%;
-  padding: 23vh 25vh 0 25vh;
+  text-align: center;
+  font-weight: 400;
+  width: 100%;
+  padding: 0;
   margin: 0;
-  display: none;
-  color: #FFFFFF;
-  z-index: 4;
-  overflow: hidden;
-  
 }
 
-#nosotros p {
-  font-size: .9em;
-  text-align: left;
-}
-
-#nosotros ul {
-  text-align: left;
-  font-size: .8em;
+#nosotros img {
+  width: 50%;
 }
 
 #nosotros h1 {
+  font-size: 2.3em;
   color: #E83C2F;
-  font-size: 2.5em;
+}
+
+#nosotros h2 {
+  font-size: 1.5em;
+  color: #E83C2F;
+}
+
+#nosotros p {
+  font-size: .8em;
+  color: #FFFFFF;
 }
 
                 /* ----------------- servicios ----------------- */
-
-#serbg {
+#servicios {
   height: 100%;
-  width: 100%;
-  background-image: url(../img/caballito.jpg);
+  background-image: url(../img/caballito1.jpg);
+  text-align: center;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: none;
-  position: fixed;
-  z-index: 1;
-}                
-
-#servicios {
-  height: 100%;
-  padding: 23vh 25vh 0 25vh;
+  font-weight: 400;
+  width: 100%;
+  padding: 0;
   margin: 0;
-  display: none;
-  color: #FFFFFF;
-  z-index: 3;
 }
 
-#servicios p {
-  font-size: .9em;
-  text-align: left;
+#servicios img {
+  width: 80%;
 }
 
 #servicios h1 {
+  font-size: 2.3em;
   color: #E83C2F;
-  font-size: 2em;
 }
 
 #servicios h2 {
-  color: #DAA1A1;
-  font-size: 1.2em;
+  font-size: 1.5em;
+  color: #E83C2F;
 }
 
-#contexto {
-  text-align: left;
+#servicios h3 {
+  font-size: 1em;
+  color: #E83C2F;
 }
 
-#contexto img {
-  vertical-align: center;
+#servicios p {
+  font-size: .8em;
+  color: #FFFFFF;
+  display: inline-block;
 }
 
-#personalidad {
-  text-align: right;
-}
-
-#personalidad img {
-  vertical-align: center;
-}
-
-#ruta {
- text-align: left;
- }
 
                 /* ----------------- comunidad ----------------- */
-
-#combg {
+#comunidad {
   height: 100%;
-  width: 100%;
-  background-image: url(../img/polanco.jpg);
+  background-image: url(../img/polanco1.jpg);
+  text-align: center;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: none;
-  position: fixed;
-  z-index: 1;
-
+  font-weight: 400;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
-#comunidad {
-  height: 100%;
-  padding: 23vh 25vh 0 25vh;
-  margin: 0;
-  display: none;
-  color: #FFFFFF;
-  z-index: 3;
+#comunidad img {
+  width: 60%;
 }
 
 #comunidad h1 {
+  font-size: 2.3em;
   color: #E83C2F;
-  font-size: 2em;
 }
 
 #comunidad h2 {
-  color: #ffffff;
-  font-size: 1.2em;
+  font-size: 1.5em;
+  color: #E83C2F;
+}
+
+#comunidad h3 {
+  font-size: 1em;
+  color: #FFFFFF;
 }
 
                 /* ----------------- contacto ----------------- */
 
-#conbg {
+#contacto {
   height: 100%;
-  width: 100%;
-  background-image: url(../img/angel.jpg);
+  background-image: url(../img/angel1.jpg);
+  text-align: center;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: fixed;
-  display: none;
-  z-index: 1;
-}                
-
-#contacto {
-  height: 100%;
-  padding: 23vh 25vh 0 25vh;
-  margin: 0;
-  display: none;
+  font-weight: 400;
   color: #FFFFFF;
-  z-index: 3;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#contacto img {
+  width: 60%;
 }
 
 #contacto h1 {
+  font-size: 2.3em;
   color: #E83C2F;
+}
+
+#contacto h2 {
+  font-size: 1.5em;
+  color: #E83C2F;
+}
+
+#contacto h3 {
+  font-size: 1em;
+  
+}
+
+#footer {
+  height: 4vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #333333;
+
+}
+
+#footer i {
+  color: #FFFFFF;
+  display: -webkit-box;
+  -webkit-box-pack:center;
+  -webkit-box-align:center;
 }
